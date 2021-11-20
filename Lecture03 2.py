@@ -29,3 +29,19 @@ print (math.gcd (a, b))
 #gcd = a+b
 #print(gcd)
 
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+
+while True:
+    try:
+        a = int(input("Введите число a: "))
+        b = int(input("Введите число b: "))
+        if gcd(a, b):
+            print("Наибольший общий делитель чисел A и B:", gcd(a, b))
+        exit(0)
+    except (TypeError, ValueError) as e:
+        print("Неправильно введены ")
+        
