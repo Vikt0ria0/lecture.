@@ -38,10 +38,10 @@ for i in range(t):
     if number[0] == '6':
          k += 4.5
          result = 'Тренировка на растяжка'
-    if number[0] == '6':
+    if number[0] == '7':
          k += 10
          result = 'Бег'
-    if number[0] == '7':
+    if number[0] == '8':
          k += 10.3
          result = 'Плавание' 
 print('(На массой человека 65 кг.) Сожжено около {} каллорий: '.format(k))
